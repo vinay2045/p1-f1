@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trips - Innovatia Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/open-props/easings.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="nav-part1">
+                <h3>menu</h3>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="nav-part2">
+                <h1>Innovatia</h1>
+            </div>
+            <div id="nav-part3">
+                <a href="index.html"><h3><span>Home</span> <span><i class='bx bxs-home-alt-2'></i></span></h3></a>
+
+                <a href="aboutus.html"><h3><span>About Us</span> <span><i class='bx bxs-invader'></i></span></h3></a>
+                <a href="trips.html"><h3>Trips <span><i class='bx bxl-airbnb'></i></span></h3></a>
+                <a href="contactus.html"><h3>Contact Us <span><i class='bx bx-mail-send'></i></span></h3></a>
+                
+                <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Hero Section for Trips -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Explore our Journeys</h1>
+                <h4>- Curated adventures that transform travelers</h4>
+                <p>Discover our handpicked collection of immersive travel experiences in the Azores and beyond</p>
+            </div>
+            <div class="hero-highlight">
+                <h3>Early Bird Discount</h3>
+                <button class="cta-btn">Book now & save 15%</button>
+            </div>
+        </div>
+        
+        <div class="page-container">
+            <div class="content-section">
+                <div class="content-card">
+                    <div class="flex-row" style="align-items: center;">
+                        <div class="column">
+                            <h2 class="section-title">Our Destinations</h2>
+                            <p>At Innovatia Travel, we've carefully selected destinations that offer authentic experiences and natural beauty. Each trip is thoughtfully designed to connect you with local cultures, breathtaking landscapes, and unforgettable moments.</p>
+                        </div>
+                        <div class="column">
+                            <div class="trip-filter">
+                                <select class="form-input">
+                                    <option>All Destinations</option>
+                                    <option>Azores Islands</option>
+                                    <option>Mainland Portugal</option>
+                                    <option>Spain</option>
+                                    <option>Italy</option>
+                                </select>
+                                <select class="form-input">
+                                    <option>All Trip Types</option>
+                                    <option>Adventure</option>
+                                    <option>Cultural</option>
+                                    <option>Nature & Wildlife</option>
+                                    <option>Beach & Relaxation</option>
+                                </select>
+                                <select class="form-input">
+                                    <option>All Durations</option>
+                                    <option>1-3 Days</option>
+                                    <option>4-7 Days</option>
+                                    <option>8-14 Days</option>
+                                    <option>15+ Days</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <h2 class="section-title">Featured Trips</h2>
+                <div class="trip-grid">
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="São Miguel Island" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">São Miguel Explorer</h3>
+                            <p class="trip-description">Experience the best of São Miguel Island with this 7-day adventure. Visit stunning lakes, hot springs, and picturesque villages.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 7 Days</span>
+                                <span><i class='bx bx-group'></i> Max 12 people</span>
+                            </div>
+                            <p class="trip-price">From €1,299 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Volcanic Wonders" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">Volcanic Wonders</h3>
+                            <p class="trip-description">Discover the volcanic heritage of the Azores. Hike active calderas, soak in geothermal pools, and explore lava caves.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 5 Days</span>
+                                <span><i class='bx bx-group'></i> Max 8 people</span>
+                            </div>
+                            <p class="trip-price">From €899 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dp" alt="Island Hopping" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">Azores Island Hopping</h3>
+                            <p class="trip-description">Visit three stunning islands in one trip. Experience the unique character of São Miguel, Terceira, and Pico with guided tours.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 10 Days</span>
+                                <span><i class='bx bx-group'></i> Max 10 people</span>
+                            </div>
+                            <p class="trip-price">From €1,899 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Whale Watching" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">Whale Watching Adventure</h3>
+                            <p class="trip-description">An unforgettable marine experience. Spot whales, dolphins, and other marine life in their natural habitat.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 3 Days</span>
+                                <span><i class='bx bx-group'></i> Max 12 people</span>
+                            </div>
+                            <p class="trip-price">From €599 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hiking Tour" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">Azores Hiking Tour</h3>
+                            <p class="trip-description">Trek through the most beautiful trails in the archipelago. Experience breathtaking vistas and hidden natural wonders.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 6 Days</span>
+                                <span><i class='bx bx-group'></i> Max 8 people</span>
+                            </div>
+                            <p class="trip-price">From €1,099 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="trip-card">
+                        <img src="https://images.unsplash.com/photo-1567454712321-4a3153301c00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Immersion" class="trip-img">
+                        <div class="trip-info">
+                            <h3 class="trip-name">Cultural Immersion</h3>
+                            <p class="trip-description">Immerse yourself in Azorean culture. Meet local artisans, enjoy traditional cuisine, and participate in authentic festivals.</p>
+                            <div class="trip-meta">
+                                <span><i class='bx bx-time'></i> 8 Days</span>
+                                <span><i class='bx bx-group'></i> Max 10 people</span>
+                            </div>
+                            <p class="trip-price">From €1,399 per person</p>
+                            <button class="trip-button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="content-card">
+                    <h2 class="section-title">Why Travel With Us</h2>
+                    <div class="flex-row">
+                        <div class="column">
+                            <div class="feature-item">
+                                <i class='bx bx-map-alt' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                <h3>Local Expertise</h3>
+                                <p>Our guides are locals with deep knowledge of Azorean history, culture, and hidden gems.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="feature-item">
+                                <i class='bx bx-shield-quarter' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                <h3>Safe Travel</h3>
+                                <p>Your safety is our priority. We follow strict safety protocols and are certified by tourism safety boards.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="feature-item">
+                                <i class='bx bx-leaf' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                <h3>Sustainable Practices</h3>
+                                <p>We're committed to eco-friendly tourism that respects and preserves the natural environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="content-card">
+                    <h2 class="section-title">Traveler Reviews</h2>
+                    <div class="reviews-container">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-avatar">
+                                    <i class='bx bxs-user-circle' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                </div>
+                                <div>
+                                    <h3>Sarah T.</h3>
+                                    <div class="review-stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"The São Miguel Explorer tour exceeded all my expectations! Our guide João was incredibly knowledgeable and showed us places we would never have found on our own. The accommodations were charming and the pace was perfect."</p>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-avatar">
+                                    <i class='bx bxs-user-circle' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                </div>
+                                <div>
+                                    <h3>Mark L.</h3>
+                                    <div class="review-stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"The Island Hopping adventure was the highlight of our year! Seeing three distinct islands gave us a real appreciation for the diversity of the Azores. The whale watching experience was absolutely breathtaking."</p>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-avatar">
+                                    <i class='bx bxs-user-circle' style="font-size: 2.5rem; color: #1a8a9e;"></i>
+                                </div>
+                                <div>
+                                    <h3>Elena K.</h3>
+                                    <div class="review-stars">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"As a solo traveler, I was nervous about the hiking tour, but I couldn't have asked for a better experience. The small group made it feel like traveling with friends, and the views were absolutely spectacular."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Ready for your next adventure?</h2>
+                <button class="cta-btn">Book Your Trip</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">Innovatia</div>
+                    <p class="footer-tagline">Discover the world with us - we're your gateway to extraordinary experiences and unforgettable adventures.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class='bx bx-chevron-right'></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class='bx bx-chevron-right'></i> About Us</a></li>
+                        <li><a href="trips.html"><i class='bx bx-chevron-right'></i> Our Trips</a></li>
+                        <li><a href="contactus.html"><i class='bx bx-chevron-right'></i> Contact Us</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Travel Blog</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class='bx bx-map'></i> 123 Adventure Avenue<br>Ponta Delgada, Azores<br>Portugal</p>
+                    <p><i class='bx bx-phone'></i> +351 123 456 789</p>
+                    <p><i class='bx bx-envelope'></i> info@innovatiatravel.com</p>
+                    <p><i class='bx bx-time-five'></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Quick Contact</h3>
+                    <p>Have a question about our trips? Send us a message and we'll get back to you shortly.</p>
+                    <form class="quick-contact">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Innovatia Travel. All rights reserved.</p>
+                <p>Designed with <i class='bx bx-heart' style="color: #e74c3c;"></i> for travelers around the world</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

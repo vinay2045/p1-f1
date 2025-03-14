@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Azores</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/open-props/easings.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Move script to the end of body for better performance -->
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="nav-part1">
+                <h3>menu</h3>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="nav-part2">
+                <h1>Innovatia</h1>
+            </div>
+            <div id="nav-part3">
+                <a href="index.html"><h3><span>Home</span> <span><i class='bx bxs-home-alt-2'></i></span></h3></a>
+                <a href="aboutus.html"><h3><span>About Us</span> <span><i class='bx bxs-invader'></i></span></h3></a>
+                <a href="trips.html"><h3>Trips <span><i class='bx bxl-airbnb'></i></span></h3></a>
+                <a href="contactus.html"><h3>Contact Us <span><i class='bx bx-mail-send'></i></span></h3></a>
+                
+                <!-- Updated theme toggle button with improved SVG -->
+                <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Enjoy your travel ..!</h1>
+                <h4>- Chase sunsets, collect moments, leave footprints.</h4>
+                <p>Discover the most unique and vibrant experiences the Azores have to offer</p>
+                <div class="card-content white-bg">
+                    <h3 class="card-title">Weather in the Azores</h3>
+                    <div class="card-tags">
+                        <span class="tag">Weather</span>
+                        <span class="tag">Nature</span>
+                        <span class="tag">Azores</span>
+                    </div>
+                    <div class="read-more">→</div>
+                </div>
+            </div>
+            <div class="hero-highlight">
+                <h3>Book Your Seats Now                        </h3>
+               
+                <button class="cta-btn">Book now</button>
+            </div>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="blog-section">
+            <div class="blog-header">
+                <div>
+                    <h2 class="blog-title">Blog about  Traveling ..!</h2>
+                    <h3 class="dex-1"> Let the road teach what no book ever could... </h3>
+                </div>
+                <div>
+                    <p class="blog-description">
+                        The most exotic island in Europe in the center of the vast blue ocean, enveloped by a mild maritime climate and the paradisiacal beauty of untouched nature imaginable
+                    </p>
+                    <button class="read-all-btn">Read all articles</button>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card-large">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Island with beautiful nature">
+                    <div class="time-indicator">
+                        <span class="time-icon">⏱</span>
+                        <span>6 min read</span>
+                    </div>
+                    <div class="card-content white-bg">
+                        <h3 class="card-title">Weather in the Azores</h3>
+                        <div class="card-tags">
+                            <span class="tag">Weather</span>
+                            <span class="tag">Nature</span>
+                            <span class="tag">Azores</span>
+                        </div>
+                        <div class="read-more">→</div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="blog-card blog-card-sm">
+                        <img src="https://images.unsplash.com/photo-1741462166415-1c5bcbdbbc46?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weather in the Azores">
+                        <div class="time-indicator">
+                            <span class="time-icon">⏱</span>
+                            <span>7 min read</span>
+                        </div>
+                        <div class="card-content white-bg">
+                            <h3 class="card-title">Weather in the Azores</h3>
+                            <div class="card-tags">
+                                <span class="tag">Weather</span>
+                                <span class="tag">Nature</span>
+                                <span class="tag">Azores</span>
+                            </div>
+                            <div class="read-more">→</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card blog-card-sm">
+                        <img src="https://images.unsplash.com/photo-1573455494060-c5595004fb6c?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hiking in the mountains">
+                        <div class="time-indicator">
+                            <span class="time-icon">⏱</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="card-content white-bg">
+                            <h3 class="card-title">Hiking in the mountains</h3>
+                            <div class="card-tags">
+                                <span class="tag">Travel</span>
+                                <span class="tag">Nature</span>
+                                <span class="tag">Azores</span>
+                            </div>
+                            <div class="read-more">→</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Let's get to know<br>the Azores</h2>
+            <button class="cta-btn">Book now</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">Innovatia</div>
+                    <p class="footer-tagline">Discover the world with us - we're your gateway to extraordinary experiences and unforgettable adventures.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class='bx bx-chevron-right'></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class='bx bx-chevron-right'></i> About Us</a></li>
+                        <li><a href="trips.html"><i class='bx bx-chevron-right'></i> Our Trips</a></li>
+                        <li><a href="contactus.html"><i class='bx bx-chevron-right'></i> Contact Us</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Travel Blog</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class='bx bx-map'></i> 123 Adventure Avenue<br>Ponta Delgada, Azores<br>Portugal</p>
+                    <p><i class='bx bx-phone'></i> +351 123 456 789</p>
+                    <p><i class='bx bx-envelope'></i> info@innovatiatravel.com</p>
+                    <p><i class='bx bx-time-five'></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Quick Contact</h3>
+                    <p>Have a question? Send us a message and we'll get back to you shortly.</p>
+                    <form class="quick-contact">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Innovatia Travel. All rights reserved.</p>
+                <p>Designed with <i class='bx bx-heart' style="color: #e74c3c;"></i> for travelers around the world</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Properly reference the script file with the correct path -->
+    <script src="script.js"></script>
+</body>
+</html>

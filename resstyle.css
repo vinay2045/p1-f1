@@ -1,0 +1,747 @@
+/* Responsive Styles for Innovatia Travel Website */
+
+/* Base Responsive Settings */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+    
+    .main-footer {
+        padding: 50px 20px 0;
+    }
+    
+    .footer-container {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .blog-grid {
+        gap: 30px;
+    }
+}
+
+/* Large Tablets and Small Laptops */
+@media (max-width: 992px) {
+    /* Navigation */
+    nav h1 {
+        font-size: 2rem;
+    }
+    
+    #nav-part1 {
+        cursor: pointer;
+    }
+    
+    #nav-part3 {
+        position: relative;
+        gap: 10px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+    
+    .hero-highlight {
+        width: 220px;
+        height: 110px;
+    }
+    
+    /* Blog Section */
+    .blog-title {
+        font-size: 2.5rem;
+    }
+    
+    .dex-1 {
+        font-size: 1.8rem;
+    }
+    
+    .blog-description {
+        font-size: 1.3rem;
+    }
+    
+    .blog-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .blog-card-large {
+        grid-row: auto;
+    }
+    
+    .right-column {
+        gap: 30px;
+    }
+    
+    /* Page Layout */
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .column {
+        margin-bottom: 20px;
+    }
+    
+    /* Trip Cards */
+    .trip-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    /* Page Titles */
+    .page-title {
+        font-size: 2.8rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Footer Responsive */
+    .main-footer .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .main-footer .footer-logo-section {
+        grid-column: span 2;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        height: 60px;
+        padding: 0 15px;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    
+    #nav-part2 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    #nav-part2 h1 {
+        font-size: 1.8rem;
+    }
+    
+    #nav-part3 {
+        display: none;
+    }
+    
+    nav h3 {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 40px 20px 100px;
+    }
+    
+    .hero-content {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    .hero-highlight {
+        bottom: 20px;
+        top: auto;
+        right: 20px;
+        transform: none;
+    }
+    
+    /* Blog Section */
+    .blog-card-sm {
+        height: 250px;
+    }
+    
+    /* Page Layout */
+    .page-container {
+        padding: 30px 15px;
+    }
+    
+    .content-card {
+        padding: 25px;
+    }
+    
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    /* Form Elements */
+    .form-input, .form-textarea {
+        padding: 12px 15px;
+    }
+    
+    .form-button {
+        padding: 12px 25px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        height: 280px;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    
+    /* Footer Responsive */
+    .main-footer .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .main-footer .footer-logo-section {
+        grid-column: span 1;
+    }
+    
+    .main-footer .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .main-footer .quick-contact form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-footer .quick-contact input,
+    .main-footer .quick-contact form textarea {
+        width: 100%;
+    }
+    
+    /* Dropdown Menu */
+    .dropdown-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-radius: 0 0 8px 8px;
+        padding: 15px;
+    }
+    
+    .menu-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu-item {
+        padding: 10px 15px;
+        border-radius: 6px;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    
+    .has-submenu {
+        position: relative;
+    }
+    
+    .submenu {
+        position: relative;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        border-left: 2px solid var(--accent-color);
+        box-shadow: none;
+    }
+    
+    .submenu-item {
+        display: block;
+        padding: 8px 10px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: var(--text-color);
+        transition: background-color 0.3s;
+    }
+    
+    /* Contact Form Responsive */
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form-container, .contact-info-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-row .form-group {
+        width: 100%;
+    }
+    
+    /* Trip Details Responsive */
+    .trip-details {
+        flex-direction: column;
+    }
+    
+    .trip-gallery {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .trip-info {
+        width: 100%;
+    }
+    
+    /* Testimonials Responsive */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    /* Blog Responsive */
+    .blog-post-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .blog-meta {
+        flex-wrap: wrap;
+    }
+}
+
+/* Large Mobile Phones */
+@media (max-width: 576px) {
+    /* Navigation */
+    nav h1 {
+        font-size: 1.8rem;
+    }
+    
+    #nav-part3 a h3 {
+        font-size: 13px;
+    }
+    
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    
+    .hero-highlight {
+        width: 180px;
+        height: 90px;
+        padding: 10px;
+    }
+    
+    .hero-highlight h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Blog Section */
+    .blog-title {
+        font-size: 2rem;
+    }
+    
+    .dex-1 {
+        font-size: 1.5rem;
+    }
+    
+    .blog-description {
+        font-size: 1.1rem;
+    }
+    
+    /* Page Layout */
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Trip Grid */
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Trip Filter */
+    .trip-filter select {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        height: 250px;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 480px) {
+    /* Navigation */
+    nav h1 {
+        font-size: 1.6rem;
+    }
+    
+    #nav-part3 {
+        gap: 5px;
+    }
+    
+    #nav-part3 a h3 {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 30px 15px 90px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-highlight {
+        width: 160px;
+        height: 80px;
+    }
+    
+    .hero-highlight h3 {
+        font-size: 1rem;
+    }
+    
+    /* Blog Section */
+    .blog-title {
+        font-size: 1.8rem;
+    }
+    
+    .dex-1 {
+        font-size: 1.3rem;
+    }
+    
+    .blog-description {
+        font-size: 1rem;
+    }
+    
+    /* Page Layout */
+    .content-card {
+        padding: 20px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    /* Form Elements */
+    .form-label {
+        font-size: 0.95rem;
+    }
+    
+    .form-input, .form-textarea {
+        padding: 10px 12px;
+    }
+    
+    .form-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    /* Footer */
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+    
+    .footer-links h3, .footer-contact h3, .footer-newsletter h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        height: 220px;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Footer Responsive */
+    .main-footer {
+        padding: 40px 15px 0;
+    }
+    
+    .main-footer .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .main-footer .quick-contact form input,
+    .main-footer .quick-contact form textarea,
+    .main-footer .quick-contact form button {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    
+    /* Contact Form */
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+    
+    /* Feature Items */
+    .feature-item {
+        padding: 20px;
+    }
+    
+    .feature-item i {
+        font-size: 2.5rem !important;
+    }
+    
+    .feature-item h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Review Items */
+    .review-item {
+        padding: 20px;
+    }
+    
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .review-avatar {
+        margin-bottom: 10px;
+    }
+    
+    /* Trip Meta */
+    .trip-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    /* Blog Card Content */
+    .blog-card .card-content,
+    .blog-card-large .card-content {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    
+    .blog-card .card-title,
+    .blog-card-large .card-title {
+        font-size: 16px;
+    }
+    
+    .blog-card .tag,
+    .blog-card-large .tag {
+        font-size: 10px;
+        padding: 2px 8px;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    /* Section Titles */
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Footer */
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    /* Form Elements */
+    .form-input, .form-textarea {
+        padding: 10px;
+    }
+}
+
+/* Extra Small Mobile Phones */
+@media (max-width: 375px) {
+    /* Navigation */
+    #nav-part3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #nav-part3 a {
+        margin-bottom: 5px;
+    }
+    
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-highlight {
+        width: 140px;
+        height: 70px;
+    }
+    
+    /* Blog Section */
+    .blog-card-sm {
+        height: 200px;
+    }
+    
+    /* Page Layout */
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    /* Footer */
+    .footer-form {
+        flex-direction: column;
+    }
+    
+    .footer-form input {
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-form button {
+        border-radius: 8px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* Quick Contact */
+    .quick-contact button {
+        width: 100%;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure forms are responsive */
+input, textarea, select, button {
+    max-width: 100%;
+} 

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Innovatia Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/open-props/easings.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="nav-part1">
+                <h3>menu</h3>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="nav-part2">
+                <h1>Innovatia</h1>
+            </div>
+            <div id="nav-part3">
+                <a href="index.html"><h3><span>Home</span> <span><i class='bx bxs-home-alt-2'></i></span></h3></a>
+
+                <a href="aboutus.html"><h3><span>About Us</span> <span><i class='bx bxs-invader'></i></span></h3></a>
+                <a href="trips.html"><h3>Trips <span><i class='bx bxl-airbnb'></i></span></h3></a>
+                <a href="contactus.html"><h3>Contact Us <span><i class='bx bx-mail-send'></i></span></h3></a>
+                
+                <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <mask class="moon" id="moon-mask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="24" cy="10" r="6" fill="black" />
+                        </mask>
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">Have questions or ready to plan your next adventure? We're here to help make your travel dreams come true.</p>
+            </div>
+            
+            <div class="content-section">
+                <div class="flex-row">
+                    <div class="column">
+                        <div class="content-card">
+                            <h2 class="section-title">Get in Touch</h2>
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-input" placeholder="Enter your email address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" class="form-input" placeholder="What is this regarding?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea id="message" class="form-textarea" placeholder="Tell us about your travel plans or questions" required></textarea>
+                                </div>
+                                <button type="submit" class="form-button">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="content-card">
+                            <h2 class="section-title">Contact Information</h2>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class='bx bx-map' style="font-size: 1.5rem; color: #1a8a9e;"></i>
+                                    <div>
+                                        <h3>Office Location</h3>
+                                        <p>123 Adventure Avenue<br>Ponta Delgada, Azores<br>Portugal</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class='bx bx-phone' style="font-size: 1.5rem; color: #1a8a9e;"></i>
+                                    <div>
+                                        <h3>Phone</h3>
+                                        <p>+351 123 456 789</p>
+                                        <p>Monday to Friday, 9am - 6pm</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class='bx bx-envelope' style="font-size: 1.5rem; color: #1a8a9e;"></i>
+                                    <div>
+                                        <h3>Email</h3>
+                                        <p>info@innovatiatravel.com</p>
+                                        <p>bookings@innovatiatravel.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class='bx bx-time-five' style="font-size: 1.5rem; color: #1a8a9e;"></i>
+                                    <div>
+                                        <h3>Office Hours</h3>
+                                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                        <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-media">
+                                <h3>Connect With Us</h3>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                                    <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                                    <a href="#" class="social-icon"><i class='bx bxl-pinterest'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="content-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h3 class="faq-question">How far in advance should I book my trip?</h3>
+                            <p class="faq-answer">We recommend booking at least 3-6 months in advance for peak season travel (June-September). For off-season adventures, 2-3 months advance booking is usually sufficient.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">What payment methods do you accept?</h3>
+                            <p class="faq-answer">We accept all major credit cards, bank transfers, and PayPal. For certain destinations, we offer flexible payment plans.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Do you offer customized travel itineraries?</h3>
+                            <p class="faq-answer">Absolutely! We specialize in creating personalized travel experiences. Contact our team with your preferences, and we'll craft a unique journey just for you.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">What's your cancellation policy?</h3>
+                            <p class="faq-answer">Our standard policy allows for full refunds up to 45 days before departure. Cancellations within 30-45 days receive a 50% refund. Special terms may apply for certain packages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Ready to plan your dream vacation?</h2>
+                <button class="cta-btn">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">Innovatia</div>
+                    <p class="footer-tagline">Discover the world with us - we're your gateway to extraordinary experiences and unforgettable adventures.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class='bx bx-chevron-right'></i> Home</a></li>
+                        <li><a href="aboutus.html"><i class='bx bx-chevron-right'></i> About Us</a></li>
+                        <li><a href="trips.html"><i class='bx bx-chevron-right'></i> Our Trips</a></li>
+                        <li><a href="contactus.html"><i class='bx bx-chevron-right'></i> Contact Us</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Travel Blog</a></li>
+                        <li><a href="#"><i class='bx bx-chevron-right'></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class='bx bx-map'></i> 123 Adventure Avenue<br>Ponta Delgada, Azores<br>Portugal</p>
+                    <p><i class='bx bx-phone'></i> +351 123 456 789</p>
+                    <p><i class='bx bx-envelope'></i> info@innovatiatravel.com</p>
+                    <p><i class='bx bx-time-five'></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive special offers and updates on new travel destinations.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class='bx bx-paper-plane'></i></button>
+                    </form>
+                    <p style="font-size: 0.8rem; opacity: 0.7;">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Innovatia Travel. All rights reserved.</p>
+                <p>Designed with <i class='bx bx-heart' style="color: #e74c3c;"></i> for travelers around the world</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
