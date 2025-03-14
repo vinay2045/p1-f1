@@ -1,0 +1,18 @@
+/* Main CSS file that imports critical CSS immediately and defers non-critical CSS */
+
+/* Critical CSS is directly included in the HTML via <link> tag */
+/* This file imports the original style.css to ensure all styles are preserved */
+
+/* Import original style.css */
+@import '../style.css';
+
+/* Component styles */
+@import 'navigation.css';
+@import 'hero.css';
+@import 'blog.css';
+@import 'components.css';
+@import 'footer.css';
+@import 'theme-toggle.css';
+
+/* Responsive styles - should be loaded last */
+@import 'responsive.css'; 
