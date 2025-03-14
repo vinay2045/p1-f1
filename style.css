@@ -64,14 +64,19 @@ body {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 40px;
-    background-color: #1a8a9e;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-content {
-    position: absolute;
+    position: relative;
     top: 40px;
     left: 40px;
     color: white;
+    z-index: 1;
+    max-width: 60%;
 }
 
 .hero-content h1 {
@@ -98,18 +103,20 @@ body {
 .hero-highlight {
     position: absolute;
     right: 30px;
-    top: 80%;
-    transform: translateY(-50%);
+    bottom: 30px;
+    top: auto;
+    transform: none;
     background-color: var(--hero-overlay);
     backdrop-filter: blur(3px);
     padding: 15px;
     border-radius: 10px;
     color: white;
     width: 240px;
-    height: 120px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 2;
 }
 
 .hero-highlight h3 {
@@ -434,11 +441,25 @@ body {
     border-radius: 10px;
     background-color: var(--card-content-bg);
     backdrop-filter: blur(1px);
+    position: relative;
+    z-index: 1;
+}
+
+.card-content-white-bg {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--card-content-bg);
+    backdrop-filter: blur(1px);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
 }
 
 nav {
     height: 70px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -595,8 +616,10 @@ nav #nav-part1 i {
 #nav-part3 {
     display: flex;
     align-items: center;
+    gap: 15px;
+    max-width: 60%;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 20px;
 }
 
 #nav-part3 a i {
@@ -1848,6 +1871,10 @@ nav a {
 .quick-contact button:hover {
     background-color: #156d7d;
     transform: translateY(-3px);
+}
+.dropdown-menu{
+    width: 300px;
+    left: 12%;
 }
 
 /* Responsive Footer */
