@@ -204,6 +204,19 @@
     .main-footer .footer-newsletter p {
         text-align: center;
     }
+    
+    /* Footer Contact Form */
+    .footer-contact-form {
+        padding: 25px;
+    }
+    
+    .footer-contact-form h3 {
+        font-size: 1.4rem;
+    }
+    
+    .footer-contact-form-container {
+        padding: 0 15px;
+    }
 }
 
 /* Tablets */
@@ -425,6 +438,38 @@
     .footer-bottom {
         justify-content: center;
     }
+    
+    .footer-form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-contact-form h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    .footer-contact-form h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact-form p {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    
+    .footer-form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-form-submit button {
+        width: 100%;
+        max-width: 250px;
+    }
 }
 
 /* Mobile Landscape */
@@ -559,6 +604,33 @@
     .cta-section h2 {
         font-size: 1.8rem;
     }
+    
+    /* Footer Contact Form */
+    .footer-contact-form {
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    .footer-contact-form h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-contact-form p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .footer-form-group input,
+    .footer-form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-form-submit button {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
 }
 
 /* Mobile Portrait */
@@ -674,7 +746,6 @@
     
     .main-footer .footer-contact p {
         font-size: 0.9rem;
-        margin-bottom: 12px;
     }
     
     .main-footer .footer-newsletter p {
@@ -792,6 +863,31 @@
     .footer-form button {
         border-radius: 0 8px 8px 0;
     }
+    
+    /* Footer Contact Form */
+    .footer-contact-form {
+        padding: 15px 12px;
+    }
+    
+    .footer-contact-form h3 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-contact-form p {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-form-group input,
+    .footer-form-group textarea {
+        padding: 10px;
+    }
+    
+    .footer-form-submit button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
 }
 
 /* Small Mobile */
@@ -869,6 +965,25 @@
     /* Quick Contact */
     .quick-contact button {
         width: 100%;
+    }
+    
+    .footer-contact-form {
+        padding: 12px 10px;
+    }
+    
+    .footer-contact-form h3 {
+        font-size: 1rem;
+    }
+    
+    .footer-form-group input,
+    .footer-form-group textarea {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .footer-form-submit button {
+        padding: 8px 15px;
+        font-size: 0.85rem;
     }
 }
 
