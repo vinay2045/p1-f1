@@ -14,5 +14,8 @@
 @import 'footer.css';
 @import 'theme-toggle.css';
 
+/* Animation styles */
+@import 'animations.css';
+
 /* Responsive styles - should be loaded last */
 @import 'responsive.css'; 
