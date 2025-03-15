@@ -4,7 +4,7 @@
 @media (max-width: 1200px) {
     .container {
         max-width: 95%;
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
     
     nav {
@@ -48,7 +48,6 @@
     nav {
         max-width: 95%;
         padding: 0 10px;
-        margin-bottom: 3rem;
     }
     .dropdown-menu{
         width: 300px;
@@ -61,7 +60,6 @@
     
     #nav-part1 {
         cursor: pointer;
-        gap: 2px;
     }
     
     #nav-part3 {
@@ -227,9 +225,8 @@
     /* Navigation */
     nav {
         height: 60px;
-        padding: 0 15px;
+        padding: 0 10px;
         max-width: 100%;
-        margin-bottom: 3rem;
     }
     
     #nav-part2 {
@@ -246,7 +243,7 @@
     }
     
     nav h3 {
-        font-size: 18px;
+        font-size: 25px;
         padding: 4px 8px;
     }
     
@@ -357,7 +354,7 @@
     
     .menu-item {
         padding: 8px 12px;
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .has-submenu {
@@ -376,7 +373,7 @@
     
     .submenu-item {
         padding: 6px 12px;
-        font-size: 16px;
+        font-size: 13px;
     }
     
     /* Contact Page */
@@ -641,15 +638,21 @@
 @media (max-width: 480px) {
     /* Navigation */
     nav {
+        
         height: 50px;
-        padding: 0 10px;
-        margin-bottom: 3rem;
+       
     }
     
     nav h1 {
         font-size: 1.4rem;
     }
-    
+    #nav-part1{
+        display: flex;
+        gap: 2px;
+    }
+    #nav-part1 i{
+        font-size: 18px;
+    }
     #nav-part2 {
         text-align: center;
         margin: 0;
@@ -664,7 +667,7 @@
     }
     
     nav h3 {
-        font-size: 16px;
+        font-size: 18px;
         padding: 3px 6px;
     }
     
@@ -779,8 +782,8 @@
     }
     
     .menu-item {
-        padding: 8px 12px;
-        font-size: 17px;
+        padding: 8px 10px;
+        font-size: 13px;
     }
     
     .has-submenu {
@@ -798,8 +801,8 @@
     }
     
     .submenu-item {
-        padding: 6px 12px;
-        font-size: 15px;
+        padding: 6px 10px;
+        font-size: 12px;
     }
     
     /* Contact Page */
@@ -898,6 +901,9 @@
 
 /* Small Mobile */
 @media (max-width: 375px) {
+    .container{
+       padding: 2rem;
+    }
     /* Navigation */
     #nav-part3 {
         display: none;
@@ -905,15 +911,6 @@
     
     #nav-part3 a {
         display: none;
-    }
-    
-    /* Menu items for small mobile */
-    .menu-item {
-        font-size: 16px; /* Set font size for smallest screens */
-    }
-    
-    .submenu-item {
-        font-size: 14px; /* Set font size for smallest screens */
     }
     
     /* Hero Section */

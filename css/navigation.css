@@ -2,13 +2,15 @@ nav {
     height: 70px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+  
+
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     z-index: 1000;
+   
 }
 
 #nav-part1 {
@@ -20,13 +22,14 @@ nav {
 }
 
 nav h3 {
-    font-size: 20px;
+   
     border: 1.5px solid var(--text-color);
     color: var(--text-color);
     font-weight: 500;
     padding: 5px 10px;
     border-radius: 50px;
     cursor: pointer;
+    
 }
 
 nav h1 {
