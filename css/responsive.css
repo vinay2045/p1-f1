@@ -61,6 +61,7 @@
     
     #nav-part1 {
         cursor: pointer;
+        gap: 2px;
     }
     
     #nav-part3 {
@@ -245,7 +246,7 @@
     }
     
     nav h3 {
-        font-size: 14px;
+        font-size: 18px;
         padding: 4px 8px;
     }
     
@@ -356,7 +357,7 @@
     
     .menu-item {
         padding: 8px 12px;
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .has-submenu {
@@ -375,7 +376,7 @@
     
     .submenu-item {
         padding: 6px 12px;
-        font-size: 15px;
+        font-size: 16px;
     }
     
     /* Contact Page */
@@ -663,7 +664,7 @@
     }
     
     nav h3 {
-        font-size: 12px;
+        font-size: 16px;
         padding: 3px 6px;
     }
     
@@ -779,7 +780,7 @@
     
     .menu-item {
         padding: 8px 12px;
-        font-size: 15px;
+        font-size: 17px;
     }
     
     .has-submenu {
@@ -798,7 +799,7 @@
     
     .submenu-item {
         padding: 6px 12px;
-        font-size: 14px;
+        font-size: 15px;
     }
     
     /* Contact Page */
@@ -904,6 +905,15 @@
     
     #nav-part3 a {
         display: none;
+    }
+    
+    /* Menu items for small mobile */
+    .menu-item {
+        font-size: 16px; /* Set font size for smallest screens */
+    }
+    
+    .submenu-item {
+        font-size: 14px; /* Set font size for smallest screens */
     }
     
     /* Hero Section */
