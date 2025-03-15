@@ -10,6 +10,7 @@
     nav {
         max-width: 95%;
         padding: 0 15px;
+        
     }
     
     .main-footer {
@@ -47,6 +48,7 @@
     nav {
         max-width: 95%;
         padding: 0 10px;
+        margin-bottom: 3rem;
     }
     .dropdown-menu{
         width: 300px;
@@ -224,8 +226,9 @@
     /* Navigation */
     nav {
         height: 60px;
-        padding: 0 10px;
+        padding: 0 15px;
         max-width: 100%;
+        margin-bottom: 3rem;
     }
     
     #nav-part2 {
@@ -353,7 +356,7 @@
     
     .menu-item {
         padding: 8px 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .has-submenu {
@@ -372,7 +375,7 @@
     
     .submenu-item {
         padding: 6px 12px;
-        font-size: 13px;
+        font-size: 15px;
     }
     
     /* Contact Page */
@@ -638,6 +641,8 @@
     /* Navigation */
     nav {
         height: 50px;
+        padding: 0 10px;
+        margin-bottom: 3rem;
     }
     
     nav h1 {
@@ -773,8 +778,8 @@
     }
     
     .menu-item {
-        padding: 8px 10px;
-        font-size: 13px;
+        padding: 8px 12px;
+        font-size: 15px;
     }
     
     .has-submenu {
@@ -792,8 +797,8 @@
     }
     
     .submenu-item {
-        padding: 6px 10px;
-        font-size: 12px;
+        padding: 6px 12px;
+        font-size: 14px;
     }
     
     /* Contact Page */
