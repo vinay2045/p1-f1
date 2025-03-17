@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="trips.html" class="submenu-item">Azores</a>
                 </div>
             </div>
-            <a href="book.html" class="menu-item">Book a Demo</a>
+            <a href="contactus.html" class="menu-item">Book a Demo</a>
             <a href="contactus.html" class="menu-item">Contact Us</a>
         </div>
     `;
